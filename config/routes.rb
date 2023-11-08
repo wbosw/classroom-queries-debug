@@ -4,11 +4,11 @@ Rails.application.routes.draw do
   #------------------------------
   # Department routes
 
-  get("/departments", { :controller => "department", :action => "index" })
+  get("/departments", { :controller => "departments", :action => "index" })
   
   get("/departments/:path_id", { :controller => "departments", :action => "show" })
 
-  post("/insert_department", { :controller => "departments", :action => "create" })
+  post("/insert_department/", { :controller => "departments", :action => "create" })
 
   get("/departments", { :controller => "departments", :action => "index" })
   
